@@ -1,1 +1,1 @@
-# Implementation of Multivariate Linear Regression
+# Implementation of Multiple Linear Regression
