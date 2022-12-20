@@ -4,6 +4,8 @@
 
 #### Graphs showing overfitting of second model.
 
-![Overfitting of Second Model](./screenshots/ss_1.png)
 
-![Overfitting of Second Model](./screenshots/ss_2.png)
+![Graph](https://user-images.githubusercontent.com/72242181/208712511-f09551c5-ad46-4a19-94de-cfebec69ad76.png)
+
+![Graph](https://user-images.githubusercontent.com/72242181/208712598-0e69f59d-f82b-43a9-bfff-4f2758f19ff1.png)
+
