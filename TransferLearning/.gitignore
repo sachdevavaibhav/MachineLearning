@@ -1,2 +1,6 @@
 test_set
 training_set
+vgg_16_1.h5
+vgg_16_2.h5
+vgg_16_3.h5
+vgg_16_*.h5
