@@ -11,7 +11,7 @@ VGG16 net is a convolutional neural network architecture. It is a 16-layer netwo
 
 ## **VGG16 Net Architecture**
 <!-- VGG16 Architecture -->
-![VGG16 drawio](https://user-images.githubusercontent.com/72242181/210071748-b753273c-6c25-410b-9b55-b4293ac6bb37.png)
+![VGG16 Architecture](https://user-images.githubusercontent.com/72242181/210071748-b753273c-6c25-410b-9b55-b4293ac6bb37.png)
 
 
 # Steps to train the model using Transfer Learning
@@ -23,6 +23,27 @@ VGG16 net is a convolutional neural network architecture. It is a 16-layer netwo
 5. Train the model on the new dataset.
 6. Test the model on the new dataset.
 
+# Configuration of the three models
+The models are trained using transfer learning on VGG16 net. The last three fully connected layers of the VGG16 net are removed and the weights of the remaining layers are frozen. The models are trained on the same dataset but with different configurations of the last fully connected layers. The configurations of the three models are shown below with the train and validation accuracy of each model.
+
+|                     |      Model-1     |      Model-2     |      Model-3     |
+|---------------------|:----------------:|:----------------:|:----------------:|
+|         FC-1        | 256 units (Relu) | 256 units (Relu) |         -        |
+|         FC-2        | 256 units (Relu) | 256 units (Relu) |         -        |
+|         FC-3        | 256 units (Relu) |  2 units (Relu)  |         -        |
+|         FC-4        | 256 units (Relu) |         -        |         -        |
+|        Output       | 1 unit (Sigmoid) | 1 unit (Sigmoid) | 1 unit (Sigmoid) |
+|    Train Accuracy   |      0.8744      |      0.8602      |      0.8138      |
+| Validation Accuracy |      0.8055      |      0.8155      |      0.7950      |
+
+# Results
+- The model-1 has the highest train accuracy and the model-3 has the lowest train accuracy.
+- The model-2 has the highest validation accuracy and the model-3 has the lowest validation accuracy.
+- When we plot the train and validation accuracy of the three models, we can see that the model-1 and model-2 are overfitting the data and model-3 is the best model as it has lowest difference between train and validation accuracy.
+- It is observed as the number of fully connected layers in increased, the model is overfitting the data.
+
+# Conclusion
+- The model-3 is the best model as it has the lowest difference between train and validation accuracy.
 
 
 
