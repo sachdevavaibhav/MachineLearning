@@ -11,6 +11,8 @@ VGG16 net is a convolutional neural network architecture. It is a 16-layer netwo
 
 ## **VGG16 Net Architecture**
 <!-- VGG16 Architecture -->
+![VGG16 drawio](https://user-images.githubusercontent.com/72242181/210071748-b753273c-6c25-410b-9b55-b4293ac6bb37.png)
+
 
 # Steps to train the model using Transfer Learning
 <!-- Steps to train the model using Transfer Learning -->
